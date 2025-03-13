@@ -398,3 +398,24 @@ form.sign-in-form {
     left: 50%;
   }
 }
+
+.forgot-password-form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.container.forgot-password-mode .forgot-password-form {
+  display: flex;
+}
+
+.container.forgot-password-mode .sign-in-form,
+.container.forgot-password-mode .sign-up-form {
+  display: none;
+}
